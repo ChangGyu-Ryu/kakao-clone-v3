@@ -70,8 +70,9 @@
 
 .message {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
+    margin-bottom: 20px;
 }
 
 .message .message__content {
@@ -88,7 +89,7 @@
 .incoming-message img {
     width: 30px;
     border-radius: 15px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .message .message_bubble {
@@ -98,3 +99,17 @@
     border-radius: 20px
 }
 
+.incoming-message .message__author {
+    margin-top: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.incoming-message .message_bubble {
+    border-bottom-left-radius: 0px;
+}
+
+.sent-message .message_bubble {
+    border-bottom-right-radius: 0px;
+}
